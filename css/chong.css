@@ -1,0 +1,49 @@
+
+*{margin: 0; padding: 0; font-size: 12px; line-height:20px; 
+	-webkit-tap-highlight-color:transparent; -webkit-appearance:none; }
+body{background-color: #feffff;}
+a, img {-webkit-touch-callout: none; }
+body{-webkit-overflow-scrolling:touch;}
+body::-webkit-scrollbar{width: 0px;}
+textarea::-webkit-scrollbar{width: 0px;}
+div::-webkit-scrollbar{width:0px;}
+a:focus,input:focus,div:focus{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+img{display: block; border: none 0; width: 100%;}
+input,textarea{border: 0 none; display: block;}
+input[type=search] { -webkit-appearance: none; }
+::-webkit-search-cancel-button { -webkit-appearance: none; }
+::-webkit-search-results-button { -webkit-appearance: none; }
+.d-block{display: block;}
+.d-none{display: none;}
+.v-none{visibility: hidden;}
+/*文字和li重置*/
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+a{text-decoration: none;}
+li{list-style: none;}
+/*浮动和定位*/
+.fl{float: left;}
+.fr{float: right;}
+.clear:after {clear:both;visibility:hidden;content:"";display:block;}
+.rel{position: relative;}
+.abs{position: absolute;}
+
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+.icon-search:before{content: '\e600'}
+.icon-list:before{content: '\e601'}
+.icon-code:before{content: '\e602'}
+.icon-horn:before{content: '\e603'}
+.icon-people:before{content: '\e604'}
+

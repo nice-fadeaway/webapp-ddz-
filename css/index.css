@@ -1,0 +1,68 @@
+*{margin:0;padding:0;}
+img{display:block;}
+html,body{height:100%;}
+.swiper-container {width: 100%;height: 100%;}  
+.swiper-slide{width:100%;height:100%;}
+/* 必备 */
+.ani{position:absolute;}
+/* 分页中的小点 */
+.swiper-pagination-bullet {
+width: 6px;height: 6px;background: #f00;opacity: .4;}
+.swiper-pagination-bullet-active {opacity: 1;}
+
+
+
+/* 内容 */
+.page1-left{top: 0;left: 0;width: 73%;z-index: 2}
+.page1-right{top: 0;right: 0;width: 58.5%;z-index: 1}
+.page1-center{z-index: 2;top: 25%;left: 20%;opacity: 0}
+.page1-center>p{font-size: 60px;color: red;text-align: center;font-weight: bold;
+	line-height: 30px;margin-bottom: 20px}
+.page1-center>img{width: 50%;margin-left: 27%;}
+.page1-center>center{font-size: 30px}
+
+.a1{animation:pageani1 2s forwards;-webkit-animation:pageani1 2s forwards;}
+.a2{animation:pageani1 2s 1.5s forwards;-webkit-animation:pageani1 2s 1.5s forwards;}
+.a3{animation:pageani1 2s 3s forwards;-webkit-animation:pageani1 2s 3s forwards;}
+.a4{animation:pageani1 2s 4.5s forwards;-webkit-animation:pageani1 2s 4.5s forwards;}
+.a5{animation:pageani1 2s 6s forwards;-webkit-animation:pageani1 2s 6s forwards;}
+
+.gamebg{top: 2%;left: 0;width: 90%;}
+.p1{width: 8%;top: 33%;left: 68%}
+.p2{width: 9%;top: 49%;left: 68%}
+.p3{width: 9%;top: 65%;left: 68%}
+
+.g2p1{width: 10%;top: 33%;left: 65%}
+.g2p2{width: 12%;top: 50%;left: 65%}
+.g2p3{width: 12%;top: 65%;left: 65%}
+
+.g3p1{width: 15%;top: 36%;left: 66%}
+.g3p2{width: 15%;top: 50%;left: 66%}
+.g3p3{width: 15%;top: 68%;left: 66%}
+
+.g4p1{width: 15%;top: 35%;left: 62%}
+.g4p2{width: 18%;top: 50%;left: 62%}
+.g4p3{width: 18%;top: 65%;left: 62%}
+.pagegame1{animation:game1 0.5s linear 7s infinite;webkit-animation:animate2 0.1s linear 7s infinite;
+	transform-origin:center center}
+.pagegame2{animation:game1 0.5s linear 0s infinite;webkit-animation:animate2 0.1s linear 0s infinite ;
+	transform-origin:center center}
+
+.gamebg6{width: 100%;z-index: 1}
+.btn{width: 20%;bottom:5%;left: 40%;z-index: 1}
+.tan{width: 100%}
+
+@keyframes pageani1{
+	0%{opacity: 0;transform:scale(1) }
+	70%{opacity: 1;transform: scale(1.1)}
+	100%{opacity: 0;transform:scale(1)}
+
+}
+
+@keyframes game1{
+	0%{transform:rotate(0deg)}
+	25%{transform:rotate(-10deg)}
+	50%{transform:rotate(0deg)}
+	75%{transform:rotate(10deg)}
+	100%{transform:rotate(0deg)}
+}
